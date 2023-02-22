@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Log-in</title>
+</head>
+
+<body class="body-login">
+    <form class="form">
+        <h1>Registro</h1>
+        <label for="nombre" id="text1">Nombres:</label>
+        <input class="control" id="nombre" name="nombre" placeholder="Ingrese datos" type="text" required />
+        <label for="apellido" id="text2">Apellidos:</label>
+        <input class="control" id="apellido" name="apellido" placeholder="Ingrese datos" type="text" required />
+        <label for="promedio" id="text3">Correo</label>
+        <input class="control" id="promedio" name="promedio" placeholder="Ingrese datos" type="email" required />
+        <label for="promedio" id="text3">Contraseña</label>
+        <input class="control" id="promedio" name="promedio" placeholder="Ingrese datos" type="password" required />
+        <label for="rol" class="control" id="select">¿Que eres?</label>
+        <select class="control-s" name="opcion" id="opcion">
+            <option value="0" selected>Seleccione una opción</option>
+            <option value="estudiante">Cliente</option>
+            <option value="profesor">Fotografo</option>
+        </select>
+        <button type="button" class="btn" id="btnAgregar">Agregar</button>
+    </form>
+    <section class="allCards">
+        <div class="cardsEstudiantes" id="cardsEstudiantes"></div>
+        <div class="cardsProfesores" id="cardsProfesores"></div>
+        <div class="" id="cardsAdministrativo"></div>
+    </section>
+</body>
+
+</html>

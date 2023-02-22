@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Enlace a los estilos-->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!--Fuentes-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Photagrapher Store</title>
+
+    <script>
+      //Coge el argumento mediante la URL
+      const valores = window.location.search;
+      const urlParams = new URLSearchParams(valores);
+      var url = urlParams.get('img');
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="../assets/img/camara-fotografica.png" alt="camera-logo" />
+        </div>
+        <div class="menu">
+          <nav>
+            <ul class="item">
+              <li>
+                <a href="#principal"><b>Galeria</b></a>
+              </li>
+              <li>
+                <a href="#"><b>Log-in</b></a>
+              </li>
+              <li>
+                <a href="#"><b>Sign-up</b></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      
+      <section class="container_destacadas">
+        <h1>Galeria</h1>
+        <div class="galeria">
+          <img id="img" src="../assets/img/img.jpg" alt="" />
+          
+        </div>
+      </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>© Copyright 2023 Photographer Store</p>
+    </footer>
+    <script>
+      //Cambiarle la direccion de la imagen con el parametro de img
+      let img = document.getElementById("img");
+      img.setAttribute("src", "../assets/img/img" + url +".jpg");
+    </script>
+  </body>
+</html>
